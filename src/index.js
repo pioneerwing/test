@@ -4,7 +4,8 @@ function factorial(n) {
     throw new Error("Factorial is only defined for non-negative integers!");
   }
 
-  if ((n = 0)) {
+  if (n === 0) {
+    // 수정: 비교 연산자 === 사용
     return 1;
   }
   return n * factorial(n - 1);
